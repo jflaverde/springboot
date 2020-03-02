@@ -18,7 +18,7 @@ public class ItemController {
 	
 	@Autowired
 	///Define que implementación es la que usará en tiempo de ejecución
-	@Qualifier("serviceRestTemplate") //serviceFeign
+	@Qualifier("serviceFeign")
 	private ItemService itemService;
 	
 	
