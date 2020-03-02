@@ -11,10 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 import com.formacionbdi.springboot.app.item.models.Item;
 import com.formacionbdi.springboot.app.item.models.service.ItemService;
 
+///Manejador de los servicios implementados de ItemService
+///
 @RestController
 public class ItemController {
 	
 	@Autowired
+	///Define que implementación es la que usará en tiempo de ejecución
 	@Qualifier("serviceFeign")
 	private ItemService itemService;
 	

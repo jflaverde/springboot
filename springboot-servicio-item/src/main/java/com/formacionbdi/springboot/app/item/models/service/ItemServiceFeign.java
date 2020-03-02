@@ -10,9 +10,12 @@ import org.springframework.stereotype.Service;
 import com.formacionbdi.springboot.app.item.clientes.ProductoClienteRest;
 import com.formacionbdi.springboot.app.item.models.Item;
 
+///Servicio de Feign implementando las funcionalidades de Item.
+///Implementa ItemService
 @Service("serviceFeign")
 public class ItemServiceFeign implements ItemService {
 
+	///Inyecta ProductoClienteRest
 	@Autowired
 	private ProductoClienteRest clienteFeign;
 	

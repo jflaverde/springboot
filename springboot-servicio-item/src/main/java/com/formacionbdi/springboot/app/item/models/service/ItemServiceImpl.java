@@ -13,9 +13,11 @@ import org.springframework.web.client.RestTemplate;
 import com.formacionbdi.springboot.app.item.models.Item;
 import com.formacionbdi.springboot.app.item.models.Producto;
 
+///Nombre del servicio Implementado
 @Service("serviceRestTemplate")
 public class ItemServiceImpl implements ItemService {
 
+	///Cliente Rest RestTemplate implementado en AppConfig.java
 	@Autowired
 	private RestTemplate clienteRest;
 	
